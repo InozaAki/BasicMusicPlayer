@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add some styles for body*/
+body {
+    min-height: 100vh;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: #020617;
+    color: #cbd5e1;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+    background-image: url(../images/bg.jpg);
+    overflow-x: hidden;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+@media screen and (min-width: 720px) {
+    .logo {
+        display: initial;
+    }
+
+    .get-started {
+        width: auto;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+}
+
+.bg{
+    display: flex;
+    margin: 0 30%;
+    height: 40rem;
+    background-color: #21293699;
+    border-radius: 1.25rem;
+}
+
+.songDesc{
+    margin-top: 1.30rem;
+    text-align: center;
+}
+
+#name{font-size: 1.25rem; color: #E5E7EB; }
+#author{font-size: 1rem; color: #4D5562;}
+.progressBar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    width: 90%;
+    height: 0.40rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.image img{
+    margin-top: 1.25rem;
+    border-radius: 1.25rem;
+    width: 90%;
+}
+.minutes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.30rem;
+    gap: 19rem
+}
+.minutes legend{
+    color: #4D5562;
+    font-size: 0.75rem;
+}
+progress{
+    border: 0;
+    height: 100%;
+    width: 100%;
+    appearance: none; 
+    background-color: #C93B76; 
+}
+
+.buttons{
+    margin-top: 1.75rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+.buttons img{
+    width: 7%;
+}
+#play{
+    width: 12%;
+    background-color: #C93B76;
+    border-radius: 50%;
+}
